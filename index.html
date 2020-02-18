@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 4</title>
+</head>
+	
+<body>
+		
+	<!--<form> -->
+	<form action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method = "POST">
+	<header>
+		<h1>Volunteer Form</h1>
+	</header>
+		
+		
+
+		<legend><strong>My Info</strong></label>
+<fieldset>
+
+		
+		<p><label>First Name: <input type = "text" name = "first_name_field"></label></p>
+		<p><label>Last Name: <input type = "text" name = "first_name_field"></label></p>
+		<p><label>Phone Number: <input type = "tel" name = "phone_field"></label></p>
+		<p><label>Email Address: <input type = "email" name = "email_field"></label></p>
+			
+		<p><label>Gender:</label></p>
+		<input type = "radio" name = "gender_field" value = "Male"><label>Male</label>
+		<input type = "radio" name = "gender_field" value = "Female"><label>Female</label>
+			
+		<p><label>Age:</label>
+		<select name = "age_field">
+		<option value = "under 18">Under18</option>
+		<option value = "18-24">18-24</option>
+		<option value = "25-34">25-34</option>
+		<option value = "35-44">35-44</option>
+		<option value = "45-54">45-54</option>
+		<option value = "55-64">55-64</option>
+		<option value = "65 and over">65 and over</option>
+		</p>
+</select></fieldset>
+
+
+<legend><strong>My Avalibilty</strong></legend>
+<fieldset>
+	<p><label>Days Avalible</label></p>
+	<p><label>Sunday</label> <input type="checkbox" name="available_field[]" value="Sunday"/></p>
+	<p><label>Monday</label> <input type="checkbox" name="available_field[]" value="Monday"/></p>
+	<p><label>Tuesday</label> <input type="checkbox" name="available_field[]" value="Tuesday"/></p>
+	<p><label>Wednesday</label> <input type="checkbox" name="available_field[]" value="Wednesday"/></p>
+	<p><label>Thursday</label> <input type="checkbox" name="available_field[]" value="Thursday"/></p>
+	<p><label>Friday</label> <input type="checkbox" name="available_field[]" value="Friday"/></p>
+	<p><label>Saturday</label> <input type="checkbox" name="available_field[]" value="Saturday"/></p>
+</fieldset>
+
+<p><label><strong>Any Comments</strong></label></p>
+<p><textarea rows ="20" cols ="60" name = "comments_field"></textarea></p>
+
+<input type ="hidden" name = "hidden_filed" value="Daniel Kulawiak">
+<input type ="submit" value ="Send Me"></p>
+</form>
+</body>
+</html>
